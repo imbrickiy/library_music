@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "library_music",
+    "name": "Music stations",
     "slug": "library_music",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,13 +9,16 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.imbrickiy.library-music"
     },
     "android": {
+      "softwareKeyboardLayoutMode": "pan",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.imbrickiy.library_music"
     },
     "web": {
       "bundler": "metro",
