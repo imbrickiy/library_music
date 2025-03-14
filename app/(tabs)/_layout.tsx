@@ -1,11 +1,14 @@
 import { Stack, Tabs } from "expo-router";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { TouchableOpacity, View } from "react-native";
+import { BottomTabBar } from "@react-navigation/bottom-tabs";
+import { Colors } from "react-native/Libraries/NewAppScreen";
 
 export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarHideOnKeyboard: true,
+        tabBarHideOnKeyboard: false,
         tabBarShowLabel: false,
         tabBarItemStyle: {
           width: "100%",

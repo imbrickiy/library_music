@@ -1,10 +1,12 @@
 import { View, Text } from "react-native";
 import React from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Profile() {
   return (
-    <View>
+    <SafeAreaView>
       <Text>Profile</Text>
-    </View>
+      <Text className="z-20">Button</Text>
+    </SafeAreaView>
   );
 }

@@ -14,7 +14,9 @@ export default function Search() {
           resizeMode="cover"
         />
         <View className="absolute bottom-9 -left-3.5 px-2 py-1 rounded-full">
-          <Text numberOfLines={2} className="font-bold text-white text-6xl">indexindexindexindexindexindexindexindexindex</Text>
+          <Text numberOfLines={2} className="font-bold text-white text-6xl">
+            index
+          </Text>
         </View>
         <Text
           className="absolute text-sm font-bold text-light-200"
