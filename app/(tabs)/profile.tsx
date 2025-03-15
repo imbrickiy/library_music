@@ -6,7 +6,6 @@ export default function Profile() {
   return (
     <SafeAreaView>
       <Text>Profile</Text>
-      <Text className="z-20">Button</Text>
     </SafeAreaView>
   );
 }
