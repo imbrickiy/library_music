@@ -10,7 +10,10 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.imbrickiy.library-music"
+      "bundleIdentifier": "com.imbrickiy.library-music",
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"]
+      }
     },
     "android": {
       "softwareKeyboardLayoutMode": "pan",
@@ -35,7 +38,7 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ],
+      ]
     ],
     "experiments": {
       "typedRoutes": true

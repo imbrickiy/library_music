@@ -13,28 +13,11 @@ import ButtonAnimated from "@/components/ButtonAnimated";
 
 export default function Search() {
   return (
-    <SafeAreaView className="flex-1">
+    <SafeAreaView className="flex-1 bg-black-200">
       <View className="p-4">
-        <ButtonAnimated />
+        <Text className="text-white">Search</Text>
       </View>
     </SafeAreaView>
   );
 }
-const styles = StyleSheet.create({
-  wrapper: {
-    borderRadius: 30,
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-  },
-  simpleButton: {
-    backgroundColor: "#988EAA",
-  },
-  touchableButton: {
-    backgroundColor: "#00000080",
-  },
-  textStyle: {
-    color: "white",
-    fontSize: 16,
-    paddingVertical: 10,
-  },
-});
+const styles = StyleSheet.create({});
