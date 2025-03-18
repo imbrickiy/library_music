@@ -24,34 +24,28 @@ export default function Index() {
 
   const { data } = usePlaylistStore();
 
-  
   useEffect(() => {
     fadeIn();
   }, []);
-  
-  const stations = data.stations;
+
+  const { stations } = data.stations as any as Stations;
 
   return (
     <View className="flex-1 bg-black-200">
       <Image
         source={require("@/assets/images/background.png")}
-        className="absolute w-full z-0"
+        className="absolute z-0 w-full"
       />
-      <View className="px-3.5 flex-1 pb-2">
+      <View className="flex-1 px-3.5 pb-2">
         <Image
           source={require("@/assets/images/icon.png")}
-          className="size-24 mt-20 mb-5 mx-auto"
+          className="mx-auto mb-5 mt-20 size-24"
         />
-        <View className=" mt-5">
+        <View className="mt-5">
           <SearchBar />
         </View>
-        <View className="mt-4 pb-safe-or-96 mx-auto">
-          <Text className="text-white text-lg font-bold">Stations</Text>
-          {/* <ActivityIndicator
-            size="large"
-            color="#ebebeb"
-            className="my-safe-offset-10 self-center"
-          /> */}
+        <View className="pb-safe-or-96 mx-auto mt-4">
+          <Text className="text-lg font-bold text-white">Stations</Text>
           {stations && (
             <Animated.FlatList
               style={animatedStyle}
@@ -63,7 +57,7 @@ export default function Index() {
                 marginBottom: 10,
               }}
               className="mt-2 pb-28"
-              data={stations.stations}
+              data={stations as Station[]}
               contentContainerStyle={{
                 gap: 18,
               }}
@@ -77,7 +71,6 @@ export default function Index() {
             />
           )}
         </View>
-        <View className=""></View>
       </View>
     </View>
   );

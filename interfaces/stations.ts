@@ -1,18 +1,17 @@
 //https://www.radiorecord.ru/api/stations
 
 export interface Stations {
-    tags:     Genre[];
-    genre:    Genre[];
-    stations: Station[];
+  genre: Genre[];
+  stations: Station[];
 }
 
-export interface Genre {
-    id:             number;
-    name:           string;
-    detail_picture: null | string;
-    picture:        null | string;
-    svg:            null | string;
-    pdf:            null | string;
+interface Genre {
+  id: number;
+  name: string;
+  detail_picture: null | string;
+  picture: null | string;
+  svg: null | string;
+  pdf: null | string;
 }
 
 export interface Station {
